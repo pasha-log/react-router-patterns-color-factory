@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams, Redirect } from 'react-router-dom';
+import './Color.css';
 
 const Color = ({ colors }) => {
 	const { color } = useParams();
@@ -9,9 +10,11 @@ const Color = ({ colors }) => {
 		const value = theColor.colorValue;
 
 		return (
-			<div>
-				<h1>BEHOLD, {color}</h1>
-				<Link to="/colors">GO BACK</Link>
+			<div className="Color-container">
+				<div className="Behold-color">
+					<h1>BEHOLD, {color}</h1>
+					<Link to="/colors">GO BACK</Link>
+				</div>
 				<Helmet>
 					<style>{`body { background-color: ${value}; }`}</style>
 				</Helmet>
