@@ -2,6 +2,7 @@
   "name": "my-app-name",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pasha-log.github.io/react-router-patterns-color-factory",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "bootstrap": "^5.2.3",
@@ -15,6 +16,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,8 @@
   "bugs": {
     "url": "https://github.com/pasha-log/react-router-patterns-color-factory/issues"
   },
-  "homepage": "https://github.com/pasha-log/react-router-patterns-color-factory#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
