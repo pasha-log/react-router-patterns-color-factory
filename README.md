@@ -4,7 +4,7 @@
 
 ## Description: 
 
-[Try it out](https://pasha-log.github.io/colors)
+[Try it out](https://pasha-log.github.io/react-router-patterns-color-factory/)
 
 An application created with React Router's BrowserRouter, Switch, Redirect, useHistory, and useParams. User can pick a color from a color picker form and view the color after clicking on a dynamically added Link on the main page. 
 
